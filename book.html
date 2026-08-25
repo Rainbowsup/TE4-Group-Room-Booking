@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<header>
+		<h1></h1>
+	</header>
+	<nav>
+		<a href="index.html">Home</a>
+		<a href="rooms.html">Rooms</a>
+		<a href="book.html">Book a Room</a>
+		<a href="bookings.html">My Bookings</a>
+		<a href="contact.html">Contact</a>
+	</nav>
+	<main>
+		<section>
+			<form>
+				<label for="first-name">First Name:</label>
+				<input type="text" name="firstName" id="first-name" required>
+				<br>
+				<label for="last-name">Last Name:</label>
+				<input type="text" name="firstName" id="last-name" required>
+				<br>
+				<label for="email">Email:</label>
+				<input type="text" name="email" id="email" required>
+				<br>
+				<label for="room-selection">Room:</label>
+				<select name="roomSelection" id="room-selection" required>
+					<option value="101">101</option>
+					<option value="102">102</option>
+					<option value="103">103</option>
+				</select>
+				<br>
+				<label for="date-selection">Date:</label>
+				<input type="date" name="dateSelection" id="date-selection" required>
+				<br>
+				<label for="start-time">Start Time:</label>
+				<input type="time" name="startTime" id="start-time" required>
+				<br>
+				<label for="end-time">End Time:</label>
+				<input type="time" name="endTime" id="end-time" required>
+				<br>
+				<label for="purpose-of-booking">Purpose of Booking:</label>
+				<br>
+				<textarea name="purposeOfBooking" id="purpose-of-booking"></textarea>
+				<br>
+				<label for="number-of-participants">Number of Participants:</label>
+				<input type="number" name="numberOfParticipants" id="number-of-participants" required>
+				<br>
+				<label for="terms-and-conditions">I have read the Terms and Conditions</label>
+				<input type="checkbox" name="termsAndConditions" id="terms-and-conditions" required>
+				<br>
+				<input type="submit" name="submit" id="submit">
+			</form>
+		</section>
+	</main>
+</body>
+
+</html>
