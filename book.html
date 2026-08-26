@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Book a Room</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -19,7 +20,7 @@
 		<a href="contact.html">Contact</a>
 	</nav>
 	<main>
-		<section>
+		<section id="form-section">
 			<form>
 				<label for="first-name">First Name:</label>
 				<input type="text" name="firstName" id="first-name" required>
@@ -47,14 +48,15 @@
 				<input type="time" name="endTime" id="end-time" required>
 				<br>
 				<label for="purpose-of-booking">Purpose of Booking:</label>
-				<br>
 				<textarea name="purposeOfBooking" id="purpose-of-booking"></textarea>
 				<br>
 				<label for="number-of-participants">Number of Participants:</label>
 				<input type="number" name="numberOfParticipants" id="number-of-participants" required>
 				<br>
-				<label for="terms-and-conditions">I have read the Terms and Conditions</label>
-				<input type="checkbox" name="termsAndConditions" id="terms-and-conditions" required>
+				<div>
+					<input type="checkbox" name="termsAndConditions" id="terms-and-conditions" required>
+					<label for="terms-and-conditions">I have read the Terms and Conditions</label>
+				</div>
 				<br>
 				<input type="submit" name="submit" id="submit">
 			</form>
