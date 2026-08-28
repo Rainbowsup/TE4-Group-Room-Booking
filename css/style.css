@@ -69,14 +69,13 @@ td {
 .room-card {
 	border: solid 2px black;
 	border-radius: 20px;
-	display: flex;
-	gap: 2px;
-	flex-direction: column;
 	padding: 20px;
 }
 
 .room-card img {
-	width: 20%;
+	width: 40%;
+	float: right;
+	border-radius: 10px;
 }
 
 address>* {
