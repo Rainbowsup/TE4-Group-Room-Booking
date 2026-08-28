@@ -32,7 +32,7 @@ header {
 .container {
 	width: min(92%, 1100px);
 	margin-inline: auto;
-	outline: red solid 1px;
+	outline: white solid 1px;
 }
 
 form {
