@@ -14,8 +14,11 @@ form {
 }
 
 body {
+	display: flex;
 	min-height: 100vh;
 	width: 100vw;
+	flex-flow: column;
+	flex-wrap: wrap;
 }
 
 nav {
@@ -27,6 +30,16 @@ nav {
 header {
 	background-color: beige;
 	padding: 5px;
+}
+
+main {
+	flex-grow: 1;
+}
+
+footer {
+	background-color: beige;
+	padding: 5px;
+	
 }
 
 .container {
