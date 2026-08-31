@@ -5,21 +5,21 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Book a Room</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 	<header>
 		<h1>Book a Room</h1>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="rooms.html">Rooms</a>
+			<a href="book.html">Book a Room</a>
+			<a href="bookings.html">My Bookings</a>
+			<a href="contact.html">Contact</a>
+		</nav>
 	</header>
-	<nav>
-		<a href="index.html">Home</a>
-		<a href="rooms.html">Rooms</a>
-		<a href="book.html">Book a Room</a>
-		<a href="bookings.html">My Bookings</a>
-		<a href="contact.html">Contact</a>
-	</nav>
-	<main>
-		<section>
+	<main class="container">
 			<form>
 				<label for="first-name">First Name:</label>
 				<input type="text" name="firstName" id="first-name" required>
@@ -32,6 +32,7 @@
 				<br>
 				<label for="room-selection">Room:</label>
 				<select name="roomSelection" id="room-selection" required>
+					<option value="">Choose Room</option>
 					<option value="101">101</option>
 					<option value="102">102</option>
 					<option value="103">103</option>
@@ -47,18 +48,18 @@
 				<input type="time" name="endTime" id="end-time" required>
 				<br>
 				<label for="purpose-of-booking">Purpose of Booking:</label>
-				<br>
 				<textarea name="purposeOfBooking" id="purpose-of-booking"></textarea>
 				<br>
 				<label for="number-of-participants">Number of Participants:</label>
 				<input type="number" name="numberOfParticipants" id="number-of-participants" required>
 				<br>
-				<label for="terms-and-conditions">I have read the Terms and Conditions</label>
-				<input type="checkbox" name="termsAndConditions" id="terms-and-conditions" required>
+				<div>
+					<input type="checkbox" name="termsAndConditions" id="terms-and-conditions" required>
+					<label for="terms-and-conditions">I have read the Terms and Conditions</label>
+				</div>
 				<br>
 				<input type="submit" name="submit" id="submit">
 			</form>
-		</section>
 	</main>
 	<footer>I am a footer</footer>
 
